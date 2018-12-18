@@ -1,0 +1,25 @@
+{
+  "name": "Googonly",
+  "version": "0.1",
+  "description": "Google Only.",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "*://yahoo.com/*",
+    "*://ask.com/*",
+    "*://baidu.com/*",
+    "*://duckduckgo.com/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/google16.png",
+      "48": "images/google48.png",
+      "128": "images/google128.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
